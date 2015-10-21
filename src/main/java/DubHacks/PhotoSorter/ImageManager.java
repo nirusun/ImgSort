@@ -32,9 +32,6 @@ import edu.smu.tspell.wordnet.WordNetDatabase;
 public class ImageManager {
 	private Map<String, List<Tag>>    imageBuffer;
 	private Map<String, List<String>> categories;
-	
-	//private String path;
-	
 	private static final String IMAGE_REGEX = "(.*/)*.+\\.(png|jpg|gif|bmp|jpeg|PNG|JPG|GIF|BMP)$";
 	
 	public ImageManager(String[] folderNames) {
