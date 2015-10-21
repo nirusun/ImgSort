@@ -66,13 +66,7 @@ public class ImageManager {
 				if (listCompare(similarWords, imageBuffer.get(image)) && checkMap(categories, image)) {
 					
 					categories.get(folderName).add(image);
-				} else {
-					//List<String> temp = new ArrayList<String>();
-					//temp.add(image);
-					
-					//categories.put(imageBuffer.get(image).get(0).getName(), temp);
-				}
-				//System.out.println(categories.toString());
+				} 
 			}
 		}
 		
@@ -167,7 +161,6 @@ public class ImageManager {
 			if (fileEntry.isDirectory()) {
 				loadImages(fileEntry);
 			} else if (matcher.find()){
-				//String image = fileEntry.getAbsolutePath();
 				imageBuffer.put(fileEntry.getName(), getTags(fileEntry.getAbsolutePath()));
 			}
 		}
